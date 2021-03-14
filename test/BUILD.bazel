@@ -1,0 +1,11 @@
+load("@rules_cc//cc:defs.bzl", "cc_test")
+
+cc_test(
+    name = "adaptive_merge_test",
+    srcs = [
+        "adaptive_merge_test.cpp",
+        "order_type.hpp",
+        "random_shuffle.hpp",
+    ],
+    deps = ["//:move"],
+)
