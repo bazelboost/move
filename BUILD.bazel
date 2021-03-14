@@ -14,6 +14,7 @@ cc_library(
 cc_library(
     name = "move",
     visibility = ["//visibility:public"],
+    strip_include_prefix = "include",
     includes = ["include"],
     hdrs = glob(_public_hdrs),
     deps = [
