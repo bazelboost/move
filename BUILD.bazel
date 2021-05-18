@@ -19,7 +19,7 @@ cc_library(
     hdrs = glob(_public_hdrs),
     deps = [
         ":move_internal",
-        "@boost//static_assert",
-        "@boost//core",
+        "@boost//libs/static_assert",
+        "@boost//libs/core",
     ],
 )
